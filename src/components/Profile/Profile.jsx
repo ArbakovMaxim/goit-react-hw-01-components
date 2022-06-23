@@ -2,9 +2,9 @@ import { UserDescription } from 'components/UserDescription/UserDescription';
 import { ProfileDescription } from 'components/ProfileDescription/ProfileDescription';
 import user from '../../user.json';
 import { ProfileUser } from './Profile.styled';
+import PropTypes from 'prop-types';
 
-export const Profile = events => {
-  console.log(events);
+export const Profile = () => {
   return (
     <ProfileUser>
       <UserDescription
@@ -16,4 +16,12 @@ export const Profile = events => {
       <ProfileDescription stats={user.stats} />
     </ProfileUser>
   );
+};
+
+user.PropTypes = {
+  username: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  avatar: PropTypes.string.isRequired,
+  stats: PropTypes.object.isRequired,
 };
