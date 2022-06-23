@@ -4,22 +4,29 @@ import {
   StatsName,
   StatsAmount,
 } from './ProdileDescription.styled';
+import PropTypes from 'prop-types';
 
-export const ProfileDescription = ({ stats }) => {
+export const ProfileDescription = ({ followers, views, likes }) => {
   return (
     <ListProfile>
       <InfoProfile>
         <StatsName>Followers </StatsName>
-        <StatsAmount>{stats.followers}</StatsAmount>
+        <StatsAmount>{followers}</StatsAmount>
       </InfoProfile>
       <InfoProfile>
         <StatsName>Views </StatsName>
-        <StatsAmount>{stats.views}</StatsAmount>
+        <StatsAmount>{views}</StatsAmount>
       </InfoProfile>
       <InfoProfile>
         <StatsName>Likes </StatsName>
-        <StatsAmount>{stats.likes}</StatsAmount>
+        <StatsAmount>{likes}</StatsAmount>
       </InfoProfile>
     </ListProfile>
   );
+};
+
+ProfileDescription.propTypes = {
+  followers: PropTypes.number.isRequired,
+  views: PropTypes.number.isRequired,
+  likes: PropTypes.number.isRequired,
 };

@@ -5,6 +5,7 @@ import {
   UserTag,
   UserLocation,
 } from './UserDescription.styled';
+import PropTypes from 'prop-types';
 
 export const UserDescription = ({ avatar, username, tag, location }) => {
   return (
@@ -15,4 +16,11 @@ export const UserDescription = ({ avatar, username, tag, location }) => {
       <UserLocation>{location}</UserLocation>
     </UserInfo>
   );
+};
+
+UserDescription.propTypes = {
+  username: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  avatar: PropTypes.string.isRequired,
 };
