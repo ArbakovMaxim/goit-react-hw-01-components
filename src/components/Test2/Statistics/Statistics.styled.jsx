@@ -3,5 +3,5 @@ import styled from '@emotion/styled';
 export const StatisticsExtensions = styled.section`
   width: 310px;
   height: auto;
-  background-color: #d7d7d7;
+  background-color: ${p => p.theme.colors.test2TitleFon};
 `;
