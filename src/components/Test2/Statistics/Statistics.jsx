@@ -6,7 +6,7 @@ import { StatList } from 'components/Test2/StatList/StatList';
 export const Statistics = () => {
   return (
     <StatisticsExtensions>
-      <TitleInfo text="Upload stats" />
+      {<TitleInfo title={data} />}
       <StatList events={data} />
     </StatisticsExtensions>
   );

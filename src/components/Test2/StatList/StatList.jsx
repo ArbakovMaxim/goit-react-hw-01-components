@@ -1,4 +1,4 @@
-/* import PropTypes from 'prop-types'; */
+import PropTypes from 'prop-types';
 
 import { StatInfo, Item, Label, Percentage } from './StatList.styled';
 
@@ -21,6 +21,6 @@ function color() {
   );
 }
 
-/* StatList.propTypes = {
-    id.PropTypes.string,
-}; */
+StatList.propTypes = {
+  events: PropTypes.array.isRequired,
+};
