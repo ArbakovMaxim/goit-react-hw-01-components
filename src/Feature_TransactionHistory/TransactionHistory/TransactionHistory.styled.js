@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 
 export const Tabl = styled.table`
-  width: 315px;
+  width: 945px;
   margin-bottom: 20px;
   border: ${p => p.theme.borders.borderLightGray};
   border-collapse: collapse;
