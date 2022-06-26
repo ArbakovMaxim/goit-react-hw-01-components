@@ -1,13 +1,20 @@
+import { TablItem } from './TransactionInfo.styled.jsx';
+import PropTypes from 'prop-types';
+
 export const TransactionInfo = ({ items }) => {
   return (
     <tbody>
       {items.map(item => (
         <tr key={item.id}>
-          <td>{item.type}</td>
-          <td>{item.amount}</td>
-          <td>{item.currency}</td>
+          <TablItem>{item.type}</TablItem>
+          <TablItem>{item.amount}</TablItem>
+          <TablItem>{item.currency}</TablItem>
         </tr>
       ))}
     </tbody>
   );
+};
+
+TransactionInfo.propTypes = {
+  items: PropTypes.array.isRequired,
 };

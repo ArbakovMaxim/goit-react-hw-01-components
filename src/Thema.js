@@ -8,9 +8,11 @@ export const thema = {
     test2Text: '#fff',
     online: 'green',
     offline: 'red',
+    bgtabl: '#efefef',
   },
   borders: {
     test1: '1px solid red',
+    test3: '1px solid #dddddd',
   },
   borderRadius: {
     test1: '50%',
