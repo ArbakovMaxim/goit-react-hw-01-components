@@ -1,4 +1,4 @@
-import { Title } from 'Feature_Statistics/TitleInfo/TitleInfo.styled';
+import { Title } from 'Feature/Statistics/TitleInfo/TitleInfo.styled';
 import PropTypes from 'prop-types';
 
 export const TitleInfo = ({ title }) => {

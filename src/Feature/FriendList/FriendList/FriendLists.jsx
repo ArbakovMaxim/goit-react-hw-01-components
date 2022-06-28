@@ -1,5 +1,5 @@
-import { Conteiner } from 'components/Uai/Conteiner.styled';
-import friends from '../../Mog/friends.json';
+import { Conteiner } from 'components/Ui/Conteiner.styled';
+import friends from '../../../mock/friends.json';
 import {
   FriendList,
   FriendListItem,
@@ -14,11 +14,7 @@ export const FriendsList = () => {
       <FriendList>
         {friends.map(friend => (
           <FriendListItem key={friend.id}>
-            {friend.isOnline ? (
-              <Status style={{ backgroundColor: '#0f0' }} />
-            ) : (
-              <Status style={{ backgroundColor: '#f00' }} />
-            )}
+            <Status status={friend.isOnline} />
             <Avatar
               src={friend.avatar}
               alt="User avatar"

@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { getColor } from 'components/Utils/GetColor';
+import { getColor } from 'utils/getColor';
 
 import { StatInfo, Item, Label, Percentage } from './StatList.styled';
 

@@ -26,16 +26,8 @@ export const Status = styled.span`
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  /* background-color: ${p => p.theme.colors.green}; */
+  background: ${props => (props.status ? '#0f0' : '#f00')};
 `;
-
-/* export const StatusOffline = styled.span`
-  margin-left: ${p => p.theme.space[2]}px;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background-color: ${p => p.theme.colors.red};
-`; */
 
 export const Avatar = styled.img`
   margin-left: ${p => p.theme.space[3]}px;

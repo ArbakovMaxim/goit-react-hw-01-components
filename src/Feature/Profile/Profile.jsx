@@ -1,8 +1,8 @@
-import { UserDescription } from 'Feature_Profile/UserDescription/UserDescription';
-import { ProfileDescription } from 'Feature_Profile/ProfileDescription/ProfileDescription';
-import user from '../../Mog/user.json';
+import { UserDescription } from 'Feature/Profile/UserDescription/UserDescription';
+import { ProfileDescription } from 'Feature/Profile/ProfileDescription/ProfileDescription';
+import user from '../../mock/user.json';
 import { ProfileUser } from './Profile.styled';
-import { Conteiner } from 'components/Uai/Conteiner.styled';
+import { Conteiner } from 'components/Ui/Conteiner.styled';
 
 export const Profile = () => {
   return (

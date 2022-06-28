@@ -1,8 +1,8 @@
 import { StatisticsExtensions } from './Statistics.styled';
-import data from '../../Mog/data.json';
-import { TitleInfo } from 'Feature_Statistics/TitleInfo/TitleInfo';
-import { StatList } from 'Feature_Statistics/StatList/StatList';
-import { Conteiner } from 'components/Uai/Conteiner.styled';
+import data from '../../mock/data.json';
+import { TitleInfo } from 'Feature/Statistics/TitleInfo/TitleInfo';
+import { StatList } from 'Feature/Statistics/StatList/StatList';
+import { Conteiner } from 'components/Ui/Conteiner.styled';
 
 export const Statistics = () => {
   return (

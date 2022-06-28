@@ -1,7 +1,7 @@
-import { TransactionInfo } from '../TransactionInfo/TransactionInfo';
-import transactions from '../../Mog/transactions.json';
+import { TransactionInfo } from './TransactionInfo/TransactionInfo';
+import transactions from '../../mock/transactions.json';
 import { Tabl, TablTitle, Tablth, Tabtr } from './TransactionHistory.styled';
-import { Conteiner } from 'components/Uai/Conteiner.styled';
+import { Conteiner } from 'components/Ui/Conteiner.styled';
 
 export const TransactionHistory = () => {
   return (
