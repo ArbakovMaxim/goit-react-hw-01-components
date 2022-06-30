@@ -1,5 +1,5 @@
 import { Conteiner } from 'components/Ui/Conteiner.styled';
-import friends from '../../../mock/friends.json';
+import friends from '../../mock/friends.json';
 import {
   FriendList,
   FriendListItem,
